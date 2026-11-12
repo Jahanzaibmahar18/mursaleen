@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Aptos Display", "Segoe UI", sans-serif;
+}
+
+:root {
+  font-family: "Aptos", "Segoe UI", system-ui, sans-serif;
+  color: #101b38;
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  color: #fff;
+  background: #3158cf;
+}
+
+.hero-grid {
+  background-image:
+    radial-gradient(ellipse at 82% 28%, rgb(216 228 255 / 54%), transparent 34rem),
+    linear-gradient(135deg, #f8faff 0%, #fff 54%, #f5f8ff 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
